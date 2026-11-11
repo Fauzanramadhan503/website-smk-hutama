@@ -1,0 +1,380 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #172b46;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 8%;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #10396d;
+}
+
+.logo span,
+footer span {
+    color: #2496ed;
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 3px;
+    margin-top: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #263b55;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2496ed;
+}
+
+/* HERO */
+.hero {
+    min-height: 570px;
+    padding: 80px 10%;
+    background: linear-gradient(120deg, #092d59, #1267ae);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 9px 16px;
+    border: 1px solid #79bfff;
+    border-radius: 30px;
+    color: #a8d9ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #76c7ff;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #d6e8f9;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 15px 23px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.blue {
+    background: #2196ed;
+    color: white;
+}
+
+.blue:hover {
+    background: #0873c5;
+    transform: translateY(-3px);
+}
+
+.white {
+    background: white;
+    color: #123b72;
+}
+
+.white:hover {
+    background: #dceeff;
+    transform: translateY(-3px);
+}
+
+/* LOGO BULAT */
+.hero-decoration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 270px;
+    height: 270px;
+    border: 3px solid #77c8ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+}
+
+.inner-circle {
+    width: 215px;
+    height: 215px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle span {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+}
+
+.inner-circle p {
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* INFORMASI */
+.info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 35px 8%;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.info h3 {
+    color: #1684df;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.info p {
+    color: #52647b;
+    font-size: 14px;
+}
+
+/* SECTION UMUM */
+.section {
+    padding: 85px 10%;
+    text-align: center;
+}
+
+.label {
+    color: #1684df;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section h2,
+.contact h2 {
+    font-size: 34px;
+    color: #123b72;
+    margin: 15px 0 25px;
+}
+
+/* TENTANG */
+.about {
+    background: #ffffff;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    color: #65758b;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* JURUSAN */
+.majors {
+    background: #eff6fd;
+}
+
+/* FASILITAS */
+.facilities {
+    background: #ffffff;
+}
+
+/* KARTU */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #123b72;
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.card p {
+    color: #68758a;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* KONTAK */
+.contact {
+    background: #eaf4ff;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #65758b;
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    background: #081e3b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+footer h3 {
+    font-size: 25px;
+}
+
+footer p {
+    color: #c4d4e8;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE HP */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .circle {
+        width: 210px;
+        height: 210px;
+    }
+
+    .inner-circle {
+        width: 165px;
+        height: 165px;
+    }
+
+    .inner-circle span {
+        font-size: 70px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .section h2,
+    .contact h2 {
+        font-size: 27px;
+    }
+
+}
